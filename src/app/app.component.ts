@@ -18,7 +18,7 @@ export class AppComponent {
 
   getWeather(): void {
 
-    this.weatherService.getTemperature('San Francisco')
+    this.weatherService.getTemperature('Washington')
       .subscribe(weather => {
         console.log(weather)
         this.result.name = weather.weather.name

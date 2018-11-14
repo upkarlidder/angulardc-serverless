@@ -7,6 +7,7 @@ h1 {
 .weather {
   margin-top: 4em;
   border-radius: 25px;
-  background: #EE82EE;
+  background: #B32535;
   padding: 20px; 
+  color: white;
 }
