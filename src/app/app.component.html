@@ -18,4 +18,20 @@
   </li>
 </ul>
 
+<div class="weather">
+  <h2>Here is the weather for {{ result.name }}</h2>
+  <b>Condition</b>
+  <ul>
+    <li *ngFor="let condition of result.main">
+      {{ condition }}
+    </li>
+  </ul>
+
+  <p><b>Pressure: {{ result.pressure }}</b></p>
+  <p><b>Humidity: {{ result.humidity }}</b></p>
+  <p><b>Minimum Temperature: {{ result.temp_min }} F</b></p>
+  <p><b>Maximum Temperature: {{ result.temp_max }} F</b></p>
+
+</div>
+
 <router-outlet></router-outlet>
